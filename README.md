@@ -1,4 +1,4 @@
-#Parcel tracker cli
+# Parcel tracker cli
 
 This is an unofficial python tool for accessing [Parcelsapp.com](https://parcelsapp.com) API from command line.
 It takes a universal parcel tracking number as an argument, makes a request and displays the results.
