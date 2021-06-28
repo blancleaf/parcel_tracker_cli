@@ -56,12 +56,19 @@ else:
 
 for number in numbers:
 
+    parsedNumber = number.partition(' ')[0]
+
     
-    enc_msgStr = apiEncodeString(number)
+    enc_msgStr = apiEncodeString(parsedNumber)
 
     req_headers = { 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8', 'User-Agent' : USER_AGENT, 'Origin' : 'https://parcelsapp.com' }
 
     req_data = { 'trackingId': enc_msgStr, 'carrier': "Auto-Detect", 'language': "en", 'country': "Auto-Detect", 'platform': "web-desktop", 'wd': "false", 'c': "false", 'p': "2", 'l': "2", 'se': "1" }
+
+
+    print("{}".format(number))
+    print("Making a request...")
+
     req = requests.post(api_addr, data=req_data, headers=req_headers)
 
     if not req.ok:
@@ -75,7 +82,7 @@ for number in numbers:
 
     data = req.json()
 
-    print("{}".format(number))
+#    print("{}".format(number))
     print("{} -----------> {}".format(data['origin'], data['destination']))
     print("Status: {}\n".format(data['status']))
 
