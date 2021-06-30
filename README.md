@@ -5,7 +5,7 @@ It takes a universal parcel tracking number _(or a path to a file containing 1 s
 
 This script is written for python3 and depends on the _requests_ library.
 
-###Input file format:###
+### Input file format:
 
 trackingNumber _comment_
 
