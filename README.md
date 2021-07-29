@@ -22,3 +22,4 @@ CI0020149575KA my stuff
 CI0020149575KA is considered a tracking number, and "my stuff" is just printed as a description of it.
 
 **Usage:** `ptracker.py <tracking_number> or <file_path>`
+_without angled brackets_
