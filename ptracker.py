@@ -14,7 +14,7 @@ ENDC    = '\033[0m'
 
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0' #Random UA
 
-OFFSET = 54 #ASCII encoding offset used by the API
+OFFSET = 64 #ASCII encoding offset used by the API
 
 api_addr = "https://parcelsapp.com/api/v2/parcels"
 
