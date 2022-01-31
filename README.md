@@ -1,6 +1,7 @@
 # Parcel tracker cli
 
-This is an unofficial python tool for accessing [Parcelsapp.com](https://parcelsapp.com) API from command line.
+This is an unofficial python tool for accessing [ordertracker](https://www.ordertracker.com) API from command line.
+**Keep in mind that this API may block and rate-limit frequent requests!**
 It takes a universal parcel tracking number _(or a path to a file containing 1 such number per line)_ as an argument, makes a request and displays the results.
 
 This script is written for python3 and depends on the _requests_ library.
